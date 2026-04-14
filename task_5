@@ -1,0 +1,74 @@
+import math
+
+#задание 2
+
+gambling_wheel = int(input("введите число от 0 до 36: "))
+
+if gambling_wheel == 0:
+    print("green")
+elif 1 < gambling_wheel <= 10:
+    if gambling_wheel % 2 == 0:
+        print("black")
+    else:
+        print("red")
+
+elif 11 < gambling_wheel <= 18:
+    if gambling_wheel % 2 == 0:
+        print("red")
+    else:
+        print("black")
+elif 19 < gambling_wheel <= 28:
+    if gambling_wheel % 2 == 0:
+        print("black")
+    else:
+        print("red")
+
+elif 28 < gambling_wheel <= 36:
+    if gambling_wheel % 2 == 0:
+        print("red")
+    else:
+        print("black")
+
+else:
+    print("thats out of the scale")
+
+print()
+
+# задание 1
+
+
+temperature, pressure, pulse = map(float, input("Введите температуру, давление и пульс: ").split())
+
+if 36 <= temperature < 37:
+    print("Нормальное состояние")
+
+elif 35 <= temperature < 36:
+    print("Легкое недомогание")
+
+elif 37 <= temperature < 38:
+    print("Легкое недомогание")
+
+elif 38 < temperature < 35:
+    print("Нужен врач")
+
+    if 110 <= pressure < 130:
+        print("Нормальное состояние")
+    elif 105 <= pressure < 110:
+        print("Легкое недомогание")
+    elif 130 <= pressure < 140:
+        print("Легкое недомогание")
+    elif 140 < pressure < 105:
+        print("Нужен врач")
+    else:
+        if 60 <= pulse < 100:
+            print("Нормальное состояние")
+        elif 55 <= pulse < 60:
+            print("Легкое недомогание")
+        elif 100 <= pulse < 110:
+            print("Легкое недомогание")
+        elif 105 < pulse > 140:
+            print("Нужен врач")
+
+        else:
+            print("ok")
+
