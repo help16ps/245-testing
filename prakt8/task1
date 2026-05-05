@@ -1,1 +1,10 @@
+n = int(input("type a number in the range from 1 to 10: "))
 
+if n >= 1 and n <= 10:
+    for i in range(1,11):
+
+        m = n * i
+        print(m)
+
+else:
+    print("number should be in the range from 1 to 10")
