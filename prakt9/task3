@@ -1,0 +1,21 @@
+n = float(input("pay up to witcher (he needs 120 coins) ((price pool is 1.5; 10; 25)): "))
+
+price = 120
+payment_switch = False
+price_counter = price-n
+
+if n >= 120:
+    payment_switch = True
+    print("you've paid enough")
+
+else:
+    while n < 120 and n == 1.5 or 10 or 25:
+
+            print("you still need", price_counter, "more.")
+            n = float(input("add up to the witcher: "))
+            price_counter -= n
+
+            if price_counter <= 0:
+                payment_switch = True
+                print("you've paid enough")
+                break
