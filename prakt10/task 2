@@ -1,0 +1,18 @@
+first_digit = int(input("first digit:"))
+second_digit = int(input("second digit:"))
+
+while True:
+
+    if second_digit <= first_digit:
+        print("second digit <= first digit, try again")
+        second_digit = int(input("second digit:"))
+
+    else:
+        third_digit = int(input("third digit:"))
+
+        if third_digit <= second_digit:
+            print("third digit <= second digit, try again")
+        
+        else:
+            print("the result: ", first_digit, second_digit, third_digit)
+            break
