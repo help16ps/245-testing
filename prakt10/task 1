@@ -1,0 +1,10 @@
+while True:
+    # needs you to type in the pin code HAHAHAHA IM COPYING THE CODE!!!!!!!!!!!!!!!!!!
+    password = input("введите пин-код: ")
+
+    # checks if the password is correct
+    if password == "4590":
+        print("доступ разрешён")
+        break
+
+    print("неправильный пин-код, попробуйте ещё")
