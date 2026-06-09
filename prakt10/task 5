@@ -1,0 +1,41 @@
+starter_balance = 1000
+
+while True:
+    print("commands: ")
+    print("1. Узнать баланс")
+    print("2. Снять 100 руб.")
+    print("3. Положить 100 руб.")
+    print("4. Выход")
+
+    print()
+
+    if starter_balance == 0:
+        print("Больше нет денег, попробуйте вложить")
+
+    print()
+
+    user_input = input("Введите цифру: ")
+    if user_input == "1":
+        print("У вас баланс", starter_balance, "руб.")
+        print()
+
+    if user_input == "2":
+
+        if starter_balance <= 0:
+            print("Нет денег")
+            print()
+
+        else:
+            starter_balance -= 100
+            print("Вы сняли 100 рублей, остаток: ", starter_balance, "руб.")
+            print()
+
+
+    if user_input == "3":
+        starter_balance += 100
+        print("Вы вложили 100 рублей: ", starter_balance, "руб.")
+        print()
+
+    if user_input == "4":
+        print("Выходим...")
+        break
