@@ -1,0 +1,18 @@
+prices = [1500, 500, 2000, 3500, 1000 ,4500]
+
+print("maximum price")
+print(max(prices))
+print()
+
+print('minimum price')
+print(min(prices))
+print()
+
+print("summary price")
+print(sum(prices))
+print()
+
+print("average price")
+print(sum(prices)/len(prices))
+print()
+print()
