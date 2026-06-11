@@ -14,5 +14,3 @@ print()
 
 print("average price")
 print(sum(prices)/len(prices))
-print()
-print()
