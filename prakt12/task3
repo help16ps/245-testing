@@ -1,0 +1,22 @@
+users = ['Admin', 'Guest', 'User', 'Bot']
+
+print(*users)
+print()
+
+print("changing user to moderator and bot to superadmin")
+print("...")
+users[2] = 'Moderator'
+users[3] = 'Superadmin'
+
+print("changed")
+print()
+
+print("then we add a newbie")
+
+print("...")
+
+role_adding = ["Newbie"]
+
+print("added")
+print()
+print(users + role_adding)
