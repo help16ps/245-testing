@@ -1,0 +1,8 @@
+palindrome = list(input("enter palindrome:"))
+
+emordnilap = list(palindrome[::-1])
+
+if emordnilap == palindrome:
+    print("its a palindrome")
+else:
+    print("its not a palindrome")
