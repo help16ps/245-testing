@@ -1,10 +1,12 @@
 import random
 
-ball_question = input("Как вас зовут?: ")
+ball_question = input("WHAT IS YOUR NAME: ")
 
 print("Привет,", ball_question, ",я магический шар, и я знаю ответ на любой твой вопрос.")
 
 asking_question = input("Какой у вас вопрос?: ")
+
+answered = False
 
 while True:
 
@@ -23,22 +25,27 @@ while True:
             if answer_rng == 1:
                 print("Бесспорно")
                 print()
+                # answered = True
 
             if answer_rng == 2:
                 print("Предрешено")
                 print()
+                # answered = True
 
             if answer_rng == 3:
                 print("Никаких сомнений")
                 print()
+                # answered = True
 
             if answer_rng == 4:
                 print("Определённо да")
                 print()
+                # answered = True
 
             if answer_rng == 5:
                 print("Можешь быть уверен в этом")
                 print()
+                # answered = True
 
         # partially positive
 
@@ -49,22 +56,27 @@ while True:
             if answer_rng == 1:
                 print("Мне кажется - да")
                 print()
+                # answered = True
 
             if answer_rng == 2:
                 print("Вероятнее всего")
                 print()
+                # answered = True
 
             if answer_rng == 3:
                 print("Хорошие перспективы")
                 print()
+                # answered = True
 
             if answer_rng == 4:
                 print("Знаки говорят - да")
                 print()
+                # answered = True
 
             if answer_rng == 5:
                 print("Да")
                 print()
+                # answered = True
 
         # neutral
 
@@ -75,22 +87,27 @@ while True:
             if answer_rng == 1:
                 print("Пока неясно, попробуй снова")
                 print()
+                # answered = True
 
             if answer_rng == 2:
                 print("Спроси позже")
                 print()
+                # answered = True
 
             if answer_rng == 3:
                 print("Лучше не рассказывать")
                 print()
+                # answered = True
 
             if answer_rng == 4:
                 print("Сейчас нельзя предсказать")
                 print()
+                # answered = True
 
             if answer_rng == 5:
                 print("Сконцентрируйся и спроси опять")
                 print()
+                # answered = True
 
         # negative
 
@@ -101,40 +118,49 @@ while True:
             if answer_rng == 1:
                 print("Даже не думай")
                 print()
+                # answered = True
 
 
             if answer_rng == 2:
                 print("Мой ответ - нет")
                 print()
+                # answered = True
 
             if answer_rng == 3:
                 print("По моим данным - нет")
                 print()
+                # answered = True
 
             if answer_rng == 4:
                 print("Перспективы не очень хорошие")
                 print()
+                # answered = True
 
             if answer_rng == 5:
                 print("Весьма сомнительно")
                 print()
+                # answered = True
 
-
-        asking_question = int(input("Хотите спросить ещё вопрос?        1. Да  2. Нет"))
+    while True:
+        asking_question = int(input("Хотите спросить ещё вопрос?        1. Да  0. Нет "))
 
         if asking_question == 1:
+
+            # answered = False
             print()
             asking_question = input("Спросите ещё вопрос: ")
 
         # most likely because input IS inputted in and no matter if its numbers or letters its still input
-        # so im changing it to int
+            # so im changing it to int
 
-        elif asking_question == 0:
+        #but it still answers as if it was question
+
+        if asking_question == 0:
             print("выходим...")
             print()
             break
 
-
         else:
             print("ошибка, неправильно введен ответ")
             print()
+    break
