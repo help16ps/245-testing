@@ -12,6 +12,6 @@ print("reversed index")
 print(data[::-1])
 print()
 
-print("even index")
+print("ODD index")
 print(data[::2])
 print()
