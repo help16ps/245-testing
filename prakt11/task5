@@ -1,0 +1,143 @@
+import random
+from string.templatelib import convert
+
+ball_question = input("WHAT IS YOUR NAME: ")
+
+print("Привет,", ball_question, ",я магический шар, и я знаю ответ на любой твой вопрос.")
+
+asking_question = input("Какой у вас вопрос?: ")
+
+while True:
+
+    if asking_question == "":
+        print("u wrote nothing lmao")
+    else:
+        category_rng = random.randint(1, 4)
+
+        # positive
+
+        if category_rng == 1:
+
+
+            answer_rng = random.randint(1, 5)
+
+            if answer_rng == 1:
+                print("Бесспорно")
+                print()
+
+            if answer_rng == 2:
+                print("Предрешено")
+                print()
+
+            if answer_rng == 3:
+                print("Никаких сомнений")
+                print()
+
+            if answer_rng == 4:
+                print("Определённо да")
+                print()
+
+            if answer_rng == 5:
+                print("Можешь быть уверен в этом")
+                print()
+
+        # partially positive
+
+        if category_rng == 2:
+
+            answer_rng = random.randint(1, 5)
+
+            if answer_rng == 1:
+                print("Мне кажется - да")
+                print()
+
+            if answer_rng == 2:
+                print("Вероятнее всего")
+                print()
+
+            if answer_rng == 3:
+                print("Хорошие перспективы")
+                print()
+
+            if answer_rng == 4:
+                print("Знаки говорят - да")
+                print()
+
+            if answer_rng == 5:
+                print("Да")
+                print()
+
+        # neutral
+
+        if category_rng == 3:
+
+            answer_rng = random.randint(1, 5)
+
+            if answer_rng == 1:
+                print("Пока неясно, попробуй снова")
+                print()
+
+            if answer_rng == 2:
+                print("Спроси позже")
+                print()
+
+            if answer_rng == 3:
+                print("Лучше не рассказывать")
+                print()
+
+            if answer_rng == 4:
+                print("Сейчас нельзя предсказать")
+                print()
+
+            if answer_rng == 5:
+                print("Сконцентрируйся и спроси опять")
+                print()
+
+        # negative
+
+        if category_rng == 4:
+
+            answer_rng = random.randint(1, 5)
+
+            if answer_rng == 1:
+                print("Даже не думай")
+                print()
+
+
+            if answer_rng == 2:
+                print("Мой ответ - нет")
+                print()
+
+            if answer_rng == 3:
+                print("По моим данным - нет")
+                print()
+
+            if answer_rng == 4:
+                print("Перспективы не очень хорошие")
+                print()
+
+            if answer_rng == 5:
+                print("Весьма сомнительно")
+                print()
+
+    while True:
+
+
+        asking_question = int(input("Хотите спросить ещё вопрос?        1. Да  2. Нет"))
+
+        if asking_question == 1:
+            print()
+            asking_question = input("Спросите ещё вопрос: ")
+
+        # most likely because input IS inputted in and no matter if its numbers or letters its still input
+        # so im changing it to int
+
+        elif asking_question == 0:
+            print("выходим...")
+            print()
+            break
+
+
+        else:
+            print("ошибка, неправильно введен ответ")
+            print()
