@@ -150,10 +150,7 @@ while True:
             print()
             asking_question = input("Спросите ещё вопрос: ")
 
-        # most likely because input IS inputted in and no matter if its numbers or letters its still input
-            # so im changing it to int
-
-        #but it still answers as if it was question
+        # more while trues hooray
 
         if asking_question == 0:
             print("выходим...")
