@@ -120,8 +120,6 @@ while True:
                 print("Весьма сомнительно")
                 print()
 
-    while True:
-
 
         asking_question = int(input("Хотите спросить ещё вопрос?        1. Да  2. Нет"))
 
