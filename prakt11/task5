@@ -1,7 +1,6 @@
 import random
-from string.templatelib import convert
 
-ball_question = input("WHAT IS YOUR NAME: ")
+ball_question = input("Как вас зовут?: ")
 
 print("Привет,", ball_question, ",я магический шар, и я знаю ответ на любой твой вопрос.")
 
