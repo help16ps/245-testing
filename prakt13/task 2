@@ -1,0 +1,7 @@
+n = []
+
+for i in range(int(input("Введите натуральное число: "))):
+    n.append(input("Введите строку: "))
+
+print(n)
+print()
