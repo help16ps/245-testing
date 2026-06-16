@@ -1,0 +1,45 @@
+numbers = [2, 6, 3, 14, 10, 4, 11, 16, 12, 5, 4, 16, 1, 0, 8, 16, 10, 10, 8, 5, 1, 11, 10, 10, 12, 0, 0, 6, 14, 8, 2,
+           12, 14, 5, 6, 12, 1, 2, 10, 14, 9, 1, 15, 1, 2, 14, 16, 6, 7, 5]
+
+print("это нынешний список перед изменениями")
+print(numbers)
+print()
+
+print("Выводим длину списка numbers:", len(numbers), "элементов") # метод len выводит количество элементов в списке
+print()
+
+print("Выводим последний элемент в списке:", numbers[-1]) # ВСЕГДА будет выводить последний элемент т.к. назначен был индекс -1
+print()
+
+print("Выводим список в обратном порядке:") # так как метод .reverse() изменяет оригинал, где метод среза не делает такого
+print(numbers[::-1])
+print()
+
+print("Выводим, если есть 5 и 17 в списке:")
+number_position_finder_five = numbers.count(5)
+number_position_finder_seventeen = numbers.count(17)
+
+print(number_position_finder_five, "пятерок")
+print(number_position_finder_seventeen, "семнадцать")
+
+
+if number_position_finder_five >= 1 and number_position_finder_seventeen >= 1:
+    print("Да")
+    print()
+
+else:
+    print("Нет")
+    print()
+
+print("Теперь мы удаляем первое и последнее значение и выводим этот список")
+print()
+
+# del numbers[0]
+# del numbers[-1]
+
+# ALTERNATIVELY if you dont wanna make a separate list:
+
+first_popper = numbers.pop(0)
+last_popper = numbers.pop()
+
+print(numbers)
