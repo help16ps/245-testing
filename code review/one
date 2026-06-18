@@ -1,1 +1,14 @@
+n = int(input("Введите натуральное число: "))
+
+for num in range(n):
+    num = int(input())
+    if num >= 1:
+        print('Число', num, '- положительное')
+    
+    elif num < 0:
+        print('Число', num, '- отрицательное')
+    
+    else:
+        print("Число равно 0")
+
 
