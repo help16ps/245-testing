@@ -1,4 +1,4 @@
-# it should be int, should specify that u need to write a number
+# должен быть int
 n = int(input("Введите натуральное число: "))
 
 
