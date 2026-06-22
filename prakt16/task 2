@@ -1,0 +1,18 @@
+ID_allowed = {10, 20, 30}
+
+ID_incoming = {20, 40, 10, 50}
+
+
+for ID in ID_incoming:
+
+    if ID in ID_allowed:
+        print(ID, "OK")
+
+    else:
+
+        print(ID, "ADDING")
+        ID_allowed.add(ID)
+
+set(ID_allowed)
+
+print(ID_allowed)
