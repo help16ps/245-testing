@@ -1,0 +1,13 @@
+two_worder = input("Введите строку слов через пробел: ")
+
+worder_list = [two_worder]
+word_split = two_worder.split(' ')
+
+
+worder_set = set(word_split)
+
+word_sorting = sorted(worder_set)
+
+print("Кол-во слов: ", len(word_sorting))
+print()
+print(' '.join(word_sorting))
