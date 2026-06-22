@@ -1,0 +1,7 @@
+CPY = {'Bond', 'Smith', 'Hunt'}
+MEE6 = {'Bond', 'Power', 'Hunt'}
+KGB = {'Petrov', 'Hunt', 'Ivanov'}
+
+Double_Agent = CPY.intersection(MEE6)
+
+print(sorted(Double_Agent))
