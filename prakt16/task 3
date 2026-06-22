@@ -1,0 +1,10 @@
+Main_server = {'data.db', 'image.png', 'log.txt'}
+
+Backup_server = {'image.png', 'script.py', 'data.db'}
+
+print("Выводим общие файлы: ")
+print(*sorted(Main_server & Backup_server), sep=', ')
+print()
+
+print("Выводим потерянные файлы: ")
+print(*sorted(Main_server - Backup_server), sep=', ')
