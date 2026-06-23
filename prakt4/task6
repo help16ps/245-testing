@@ -1,0 +1,7 @@
+import math
+
+x = float(input("Введите цифру: "))
+
+trigonometry = math.radians(math.sin(x) + math.cos(x) + math.pow(math.tan(x), 2))
+
+print(trigonometry)
