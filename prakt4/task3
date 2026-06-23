@@ -1,0 +1,12 @@
+big_number = int(input("Введите четырехзначное число: "))
+
+
+thousand_number = big_number // 1000 % 10
+hundred_number = big_number // 100 % 10
+tenth_number = big_number // 10 % 10
+one_number = big_number % 10
+
+print('Цифра в позиции тысяч равна:', thousand_number)
+print("Цифра в позиции сотен равна:", hundred_number)
+print("Цифра в позиции десяток равна:", tenth_number)
+print("Цифра в позиции единиц равна:", one_number)
