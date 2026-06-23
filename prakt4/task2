@@ -1,0 +1,10 @@
+import math
+
+first_x = int(input("Enter first number: "))
+second_x = int(input("Enter second number: "))
+first_y = int(input("Enter first number: "))
+second_y = int(input("Enter second number: "))
+
+result = math.sqrt((first_x - second_x)**2 + (first_y - second_y)**2)
+
+print(f'{result:.2f}')
