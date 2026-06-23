@@ -5,6 +5,6 @@ second_x = int(input("Enter second number: "))
 first_y = int(input("Enter first number: "))
 second_y = int(input("Enter second number: "))
 
-result = math.sqrt((first_x - second_x)**2 + (first_y - second_y)**2)
+result = math.sqrt(math.pow(first_x - second_x, 2) + math.pow(first_y - second_y, 2))
 
 print(f'{result:.2f}')
