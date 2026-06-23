@@ -1,18 +1,21 @@
-ID_allowed = {10, 20, 30}
+ID_allowed = input("Введите разрешенные ID: ")
 
-ID_incoming = {20, 40, 10, 50}
+ID_allowed_set = {int(x) for x in ID_allowed.split()}
 
 
-for ID in ID_incoming:
+ID_incoming = input("Введите новые ID: ")
 
-    if ID in ID_allowed:
+ID_incoming_list = [int(x) for x in ID_incoming.split()]
+
+
+for ID in ID_incoming_list:
+
+    if ID in ID_allowed_set:
         print(ID, "OK")
 
     else:
 
-        print(ID, "ADDING")
-        ID_allowed.add(ID)
+        print(ID, "ADDED")
+        ID_allowed_set.add(ID)
 
-set(ID_allowed)
-
-print(ID_allowed)
+print(ID_allowed_set)
