@@ -1,1 +1,9 @@
+import math
 
+first_x = float(input("Enter first number: "))
+second_x = float(input("Enter second number: "))
+
+
+result_x = math.floor(first_x) + math.ceil(second_x)
+
+print(result_x)
