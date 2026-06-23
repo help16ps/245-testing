@@ -7,4 +7,4 @@ second_y = int(input("Enter second number: "))
 
 result = math.sqrt(math.pow(first_x - second_x, 2) + math.pow(first_y - second_y, 2))
 
-print(f'{result:.2f}')
+print("Евклидово расстояние: ", f'{result:.2f}')
