@@ -9,7 +9,9 @@ CPY_list = [i for i in CPY.split()]
 MEE6_list = [j for j in MEE6.split()]
 KGB_list = [k for k in KGB.split()]
 
-print(CPY_list, MEE6_list, KGB_list)
+print(CPY_list)
+print(MEE6_list)
+print(KGB_list)
 
 
 Double_Agent = set(CPY_list) & set(MEE6_list) - set(KGB_list)
