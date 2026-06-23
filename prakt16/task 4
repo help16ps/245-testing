@@ -1,7 +1,18 @@
-CPY = {'Bond', 'Smith', 'Hunt'}
-MEE6 = {'Bond', 'Power', 'Hunt'}
-KGB = {'Petrov', 'Hunt', 'Ivanov'}
+# CPY = {'Bond', 'Smith', 'Hunt'}
+CPY = input("Введите 3 человека в ЦРУ: ")
+# MEE6 = {'Bond', 'Power', 'Hunt'}
+MEE6 = input("Введите 3 человека в МИ-6: ")
+# KGB = {'Petrov', 'Hunt', 'Ivanov'}
+KGB = input("Введите 3 человека в КГБ: ")
 
-Double_Agent = CPY.intersection(MEE6)
+CPY_list = [i for i in CPY.split()]
+MEE6_list = [j for j in MEE6.split()]
+KGB_list = [k for k in KGB.split()]
 
-print(sorted(Double_Agent))
+print(CPY_list, MEE6_list, KGB_list)
+
+
+Double_Agent = set(CPY_list) & set(MEE6_list) - set(KGB_list)
+
+
+print(*sorted(Double_Agent, reverse=True))
