@@ -1,0 +1,26 @@
+import math
+
+def solve(a, b, c):
+
+    discriminant = math.sqrt(math.pow(b, 2) - 4 * a * c)
+
+    if discriminant > 0:
+
+        x_plus = (-b + discriminant) / (2*a)
+
+        x_minus = (-b - discriminant) / (2*a)
+
+        return x_plus, x_minus
+
+    elif discriminant == 0:
+
+        x = -b / (2*a)
+
+        return x
+
+    else:
+        return "nothing"
+
+print(solve(1, -4, -5))
+print(solve(-2,7, -5))
+print(solve(1, 2, 1))
