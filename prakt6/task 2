@@ -1,0 +1,31 @@
+gambling_wheel = int(input("введите число от 0 до 36: "))
+
+if gambling_wheel == 0:
+    print("green")
+elif 1 < gambling_wheel <= 10:
+    if gambling_wheel % 2 == 0:
+        print("black")
+    else:
+        print("red")
+
+elif 11 < gambling_wheel <= 18:
+    if gambling_wheel % 2 == 0:
+        print("red")
+    else:
+        print("black")
+elif 19 < gambling_wheel <= 28:
+    if gambling_wheel % 2 == 0:
+        print("black")
+    else:
+        print("red")
+
+elif 28 < gambling_wheel <= 36:
+    if gambling_wheel % 2 == 0:
+        print("red")
+    else:
+        print("black")
+
+else:
+    print("thats out of the scale")
+
+print()
