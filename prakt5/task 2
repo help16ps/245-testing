@@ -1,0 +1,5 @@
+weight, height = map(float, input("vvedite svoy ves(kg) i rost(m): ").split())
+
+IMT = weight/(height*height)
+
+print(f'vash index massy tela: {IMT:.2f}')
