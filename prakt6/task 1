@@ -1,0 +1,41 @@
+temperature, pressure, pulse = map(float, input("Введите температуру, давление и пульс: ").split())
+
+if 37 >= temperature >= 36:
+    print('Нормальное состояние температуры')
+    print()
+
+elif 36 >= temperature >= 35 or 38 >= temperature >= 37:
+    print("Легкое недомогание температуры")
+    print()
+
+else:
+    print("Температура: Требуется врач")
+    print()
+
+
+
+if 130 >= pressure >= 110:
+    print("Нормальное состояние давления")
+    print()
+
+elif 110 >= pressure >= 105 or 140 >= pressure >= 130:
+    print("Легкое недомогание давления")
+    print()
+
+else:
+    print("Давление: Требуется врач")
+    print()
+
+
+
+if 100 >= pulse >= 60:
+    print("Нормальное состояние пульса")
+    print()
+
+elif 60 >= pulse >= 55 or 110 >= pulse >= 100:
+    print("Легкое недомогание пульса")
+    print()
+
+else:
+    print("Пульс: Требуется врач")
+    print()
