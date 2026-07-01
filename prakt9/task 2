@@ -1,0 +1,21 @@
+people_count = 0
+
+alexandra_found = False
+
+while True:
+
+    name_input = input("Write a name: ")
+
+    if name_input == "Alexandra" or name_input == "alexandra":
+
+        alexandra_found = True
+        continue
+
+    if name_input == 'Levon' or name_input == 'levon':
+        break
+
+    if alexandra_found:
+
+        people_count += 1
+
+print("people in the queue:", people_count)
