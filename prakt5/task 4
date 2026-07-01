@@ -1,0 +1,33 @@
+import math
+
+def calculate_square_area():
+    
+    """
+    asks to write width and height
+    and does an equation in return too
+     
+    """
+    
+    width = int(input("Введите ширину: "))
+    height = int(input("Введите высоту"))
+
+    
+    
+    return width * height
+
+def calculate_circle_area():
+    
+    """
+    asks to write down radius
+    calculates the circle area in return
+    """
+    
+    radius = int(input("Введите радиус: "))
+    
+    return math.pi * radius ** 2
+
+print(calculate_square_area())
+
+print()
+
+print(calculate_circle_area())
