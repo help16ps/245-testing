@@ -1,0 +1,16 @@
+def convert_to_rub():
+    """
+    u give the program two values: x and ruble,
+    then the formula solves these two values
+    and returns the result
+    """
+
+    x = float(input("vvedite summu dollara: "))
+    ruble = float(input("vvedite summu rublya: "))
+
+    converter = x * ruble
+
+    return converter
+
+
+print(convert_to_rub())
