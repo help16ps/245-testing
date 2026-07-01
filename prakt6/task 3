@@ -1,0 +1,19 @@
+import random
+
+x1 = random.randint(1,8)
+x2 = random.randint(1,8)
+y1 = random.randint(1,8)
+y2 = random.randint(1,8)
+
+print('X1, X2 =', x1, x2)
+
+print('Y1, Y2 =', y1,y2)
+
+Xcell = (x1 + y2)
+Ycell = (x2 + y1)
+
+if Xcell == Ycell:
+    print("Yes")
+
+else:
+    print("No")
