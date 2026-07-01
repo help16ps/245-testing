@@ -1,0 +1,14 @@
+dohod = int(input("vvedite godovoy dohod: "))
+
+stavka = 0.13
+
+nalog = dohod * stavka
+
+summa_na_ruki = dohod - nalog
+
+
+print(f'summa dohoda: {dohod}')
+
+print(f'summa naloga: {nalog:.2f}')
+
+print(f'summa "na ruki": {summa_na_ruki:.2f}')
